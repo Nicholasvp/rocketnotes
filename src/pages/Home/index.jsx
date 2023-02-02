@@ -1,4 +1,6 @@
-import { Container, Brand, Menu, Search, Content} from "./styles";
+import { Container, Brand, Menu, Search, Content, Newnote} from "./styles";
+
+import { AiOutlinePlus} from 'react-icons/ai'
 
 import { Header } from '../../components/Header'
 import { ButtonText } from '../../components/ButtonText'
@@ -35,6 +37,10 @@ export function Home() {
                     }} />               
                 </Section>
             </Content>
+            <Newnote>
+                <AiOutlinePlus />
+                Criar nota
+            </Newnote>
 
         </Container>
         

@@ -51,3 +51,16 @@ export const Content = styled.div`
     overflow-y: auto;
     margin-left: 10px;
 `
+export const Newnote = styled.button`
+    grid-area: newnote;
+    background-color: ${({ theme }) => theme.COLORS.ORANGE};
+    border: 0;
+
+    font-size: 20px;
+    color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:8px;
+`
