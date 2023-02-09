@@ -16,18 +16,26 @@ export const Container = styled.div`
         overflow-y: auto;
     }
 
+    .tags {
+        display: flex;
+        justify-content: flex-start;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
 `
 
 export const Form = styled.form`
     max-width: 550px;
-
     margin: 38px auto;
 
     > header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 38px;
+        margin-bottom: 36px;
     }
+
+    
 
 `

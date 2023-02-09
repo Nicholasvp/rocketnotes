@@ -6,7 +6,7 @@ export const Container = styled.div`
     align-items: center;
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
     color: ${({ theme }) => theme.COLORS.GRAY_300};
-    margin: 8px;
+    margin-bottom: 8px;
     border-radius: 10px;
     
     > input {
