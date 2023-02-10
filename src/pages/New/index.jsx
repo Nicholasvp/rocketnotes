@@ -1,5 +1,7 @@
 import { Container, Form } from './styles'
 
+import { Link } from 'react-router-dom'
+
 import { NoteItem } from '../../components/NoteItem'
 import { Header } from '../../components/Header'
 import { ButtonText } from '../../components/ButtonText'
@@ -16,7 +18,7 @@ export function New() {
                 <Form>
                     <header>
                     <h1>Criar nota</h1>
-                    <ButtonText title="voltar"/>
+                    <Link to="/">voltar</Link>
                     </header>
 
                     <Input 

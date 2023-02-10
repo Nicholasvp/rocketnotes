@@ -18,14 +18,13 @@ export const Container = styled.div`
         align-items: center;
         padding: 0 124px;
 
-    button {
+    a {
         background: none;
         border: none;
         font-size: 30px;
         color: ${({ theme }) => theme.COLORS.GRAY_300};
         }
     }
-    
     
 `
 

@@ -1,5 +1,7 @@
 import { AiOutlineMail, AiOutlineLock, AiOutlineUser } from 'react-icons/ai'
 
+import { Link } from 'react-router-dom'
+
 import { Container, Form, Background } from "./styles";
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
@@ -35,7 +37,9 @@ export function SignUp() {
 
                     <Button title="Cadastrar"/>
 
-                    <a href="#">Volte para o Login</a>
+                    <Link to="/">
+                    Volte para o Login
+                    </Link>
 
             </Form>
 

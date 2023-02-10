@@ -1,5 +1,6 @@
 import { Avatar, Container, Form } from "./styles";
 import { AiOutlineArrowLeft, AiOutlineMail, AiOutlineLock, AiOutlineUser, AiOutlineCamera } from 'react-icons/ai'
+import { Link } from "react-router-dom";
 
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
@@ -8,9 +9,9 @@ export function Profile() {
     return (
         <Container>
             <header>
-                <button> 
+                <Link to="/"> 
                 <AiOutlineArrowLeft />
-                </button>
+                </Link>
             </header>
 
             <Form>

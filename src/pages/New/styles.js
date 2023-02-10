@@ -36,6 +36,10 @@ export const Form = styled.form`
         margin-bottom: 36px;
     }
 
+    a {
+        color: ${({ theme}) => theme.COLORS.GRAY_300};
+    }
+
     
 
 `

@@ -63,4 +63,11 @@ export const Newnote = styled.button`
     align-items: center;
     justify-content: center;
     gap:8px;
+
+    a {
+        color: ${({ theme}) => theme.COLORS.BACKGROUND_900};
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
 `

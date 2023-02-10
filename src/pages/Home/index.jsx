@@ -1,5 +1,7 @@
 import { Container, Brand, Menu, Search, Content, Newnote} from "./styles";
 
+import { Link } from 'react-router-dom'
+
 import { AiOutlinePlus} from 'react-icons/ai'
 
 import { Header } from '../../components/Header'
@@ -38,8 +40,10 @@ export function Home() {
                 </Section>
             </Content>
             <Newnote>
+                <Link to="/new">
                 <AiOutlinePlus />
                 Criar nota
+                </Link>
             </Newnote>
 
         </Container>
