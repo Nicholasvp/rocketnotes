@@ -12,18 +12,29 @@ export const Container = styled.div`
         height: 144px;
         grid-area: header;
 
-        font-size: 30px;
+        
         background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
-        color: ${({ theme }) => theme.COLORS.GRAY_300};
-
         display: flex;
         align-items: center;
         padding: 0 124px;
+
+    button {
+        background: none;
+        border: none;
+        font-size: 30px;
+        color: ${({ theme }) => theme.COLORS.GRAY_300};
+        }
     }
+    
+    
 `
 
 export const Form = styled.form`
     margin: 0 auto;
+
+    > div:nth-child(3){
+        margin-bottom: 30px;
+    }
 `
 
 export const Avatar = styled.div`

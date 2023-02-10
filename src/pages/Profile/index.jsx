@@ -2,12 +2,15 @@ import { Avatar, Container, Form } from "./styles";
 import { AiOutlineArrowLeft, AiOutlineMail, AiOutlineLock, AiOutlineUser, AiOutlineCamera } from 'react-icons/ai'
 
 import { Input } from '../../components/Input'
+import { Button } from '../../components/Button'
 
 export function Profile() {
     return (
         <Container>
-            <header>                
+            <header>
+                <button> 
                 <AiOutlineArrowLeft />
+                </button>
             </header>
 
             <Form>
@@ -21,9 +24,29 @@ export function Profile() {
                     </label>
                 </Avatar>
 
-                <Input />
-                <Input />
-                <Input />
+                <Input 
+                icon={ AiOutlineUser }
+                value='Nicholas Pinheiro'
+                type="text"
+                />
+                <Input 
+                icon={ AiOutlineMail }
+                value="nicholas@gmail.com"
+                type="text"
+                />
+                <Input
+                icon={AiOutlineLock}
+                placeholder="Senha atual"
+                type="password"
+                />
+                <Input
+                icon={AiOutlineLock}
+                placeholder="Nova senha"
+                type="password"
+                />
+
+                <Button title="Salvar"/>
+                
             </Form>
         </Container>
     )
